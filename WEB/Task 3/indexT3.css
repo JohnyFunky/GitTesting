@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container-buttons {
+    transition: 0.5s color;
+}
+
+.container-buttons:hover {
+    color: white;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+body::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    115deg,
+    rgba(73, 73, 73, 0.8),
+    rgba(43, 42, 42, 0.7)
+  ),
+    url(https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/7ucwd-8JFXNG2YHWT-Full-Image_GalleryBackground-en-US-1589552040387._RI_.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.620rem;
+  margin-bottom: 1.875rem;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 450;
+  line-height: 1.4;
+  font-family: 'Roboto Slab', serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#description {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+form {
+  border-radius: 0.65rem;
+  padding: 2.5rem 0.625rem;
+  background: #ffae52;
+  opacity: 73%;
+  height: auto;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: blue;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#name-label {
+  font-size: 25px;
+}
+
+#email-label {
+  font-size: 25px;
+}
+
+.input {
+  width: 620px;
+} 
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: ;
+  color: white;
+  
+}
+
+#number-label {
+  font-size: 25px;
+}
+
+#why-label {
+  font-size: 25px;
+}
+
+#how-label {
+  font-size: 25px;
+}
+
+/*.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}*/
+.input-radio,
+.input-checkbox {
+  min-height: 1.05rem;
+  min-width: 1.05rem;
+
+}
+
+input-radio {
+  min-height: 3.25rem;
+  min-width: 3.25rem;
+}
+
+.label {
+ font-size: 25px;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.custom-btn {
+  width: 1300px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 285px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 50px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+/*Shout out to @Yuhomyan for collecting types of amazing hover buttons and their codes 
+
+Here's the link https://codepen.io/yuhomyan/pen/OJMejWJ */
+
+
+
+
+

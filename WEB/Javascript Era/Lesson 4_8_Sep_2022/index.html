@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>8th September 2022</title>
+        <script src="https://kit.fontawesome.com/19254302de.js" crossorigin="anonymous"></script>
+    </head>
+        <script>
+            //  Vòng lặp while
+            let n = 20
+            if (n==10) {
+                console.log("Hello");
+            }
+            while (n%2==0) {
+                console.log("Số chẵn");
+                n = n/2;
+            }
+
+            // Chữa bài tập in hình tam giác
+            const n2=5;
+            // Sửa i khi chỉnh hàng
+            // Sửa j khi chỉnh cột
+            for(let i=0; i <= n2; i++) {
+                for(let j = 0; j <= i; j++){
+                document.write("1")
+                }
+                document.write("<br>");
+            }
+
+            // Chữa bài tập khai báo số chẵn, lẻ
+            let myArr = [9,7,9,0,7,8,387,123,456];
+            for (let i = 0; i < myArr.length; i++) {
+                if(myArr[i]%2 == 0) {
+                    console.log("Số chẵn là " + myArr[i]);
+                }else if(myArr[i] ==0) {
+                    console.log("Phần tử bằng 0" +myArr[i]);
+                }
+            }
+
+            let question = prompt("Nhập số bạn cần");
+            if (question %2 == 0){
+                document.write("Bạn viết số gì đó số chẵn");
+            };
+
+            function IsEven(number) {
+                if (number %2==0) {
+                    document.write("Số đó là số chẵn");
+                } else {
+                    document.write("Số đó là số lẻ");
+                }3 
+            }
+            document.write(IsEven(18));
+        </script>
+    <body style="background-image: linear-gradient(to right, lime, cyan);">
+    </body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="indexT3.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/19254302de.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+          <header class="header">
+            <h1 id="title" class="text-center">Sherlock Holmes Survey Form</h1>
+            <p id="description" class="text-center">Welcome to the Sherlock Holmes community!</p>
+          </header>
+          <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="survey-form">
+            <div class="container-buttons">
+                <center>
+                <h3>Have an account?<a href="signinT3.html"> Click here</a></h3>
+                <h3>You're at the <a href="#">Sign up page</a></h3>
+                </center>
+            </div>
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+               type="text"
+               id="name"
+               name="name"
+               class="form-control input"
+               placeholder="Enter your name here"
+               required/>
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+              type="email"
+              id="email"
+              class="form-control input"
+              placeholder="Enter your email here"
+              required/>
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+             <input 
+              type="number"
+              id="number"
+              class="form-control input"
+              placeholder="Find your age here"
+              min="0"
+              max="120"
+              />
+            </div>
+            <div class="form-group checkbox">
+            <label id="how-label">How 
+             do you know Sherlock Holmes?</label>  <br>
+            <label>
+              
+              <input
+                name="how-know"
+                value="friends"
+                type="checkbox"
+                class="input-checkbox"
+                checked
+                
+              />From someone you know (family, friends, teachers, relatives,etc)</label
+            ><br>
+            <label>
+              <input
+                name="how-know"
+                value="Ac"
+                type="checkbox"
+                class="input-checkbox"
+              />Accidently find it</label
+            >
+            <br>
+            <label
+              ><input
+                name="how-know"
+                value="From movies"
+                type="checkbox"
+                class="input-checkbox"
+              />From movies, TV shows, games, reviews</label
+            >
+                <br>
+              <input
+                name="how-know"
+                value="C"
+                type="checkbox"
+                class="input-checkbox"
+               >School Projects or Competition</input> <br>
+              <input
+                name="how-know"
+                value="Others"
+                type="checkbox"
+                class="input-checkbox"
+               >Others</input>
+          </div>
+            <div class="form-group">
+              <label id="why-label">Why you read Sherlock Holmes?</label>
+               <select id="dropdown" name="role" class="form-control" required>
+                 <option disabled selected value>Choose your reason</option>
+                 <option value="Just for fun">Just for fun</option>
+                 <option value="Your school forces you to read it">Your school forces you to read it</option>
+                <option value="I like reading books and Sherlock Holmes is my choice">I like reading books and Sherlock Holmes is my choice</option>
+                 <option value="SC">School Projects or Competition</option>
+                 <option value="Other">Other</option></select>
+                 </div>
+        <div class="form-group">
+            <label class="label">Do you like it?</label><br>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+                     />Yes</label>
+            <br>
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+      <br>
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />I don't know / I haven't read it yet</label
+            >
+          </div>
+        <div class="form-group">
+            <label class="label">How long have you know Sherlock Holmes?</label><br>
+            <label>
+              <input
+                name="user-time"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+                     />Under 1 year</label>
+            <br>
+            <label>
+              <input
+                name="user-time"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />1-5 years</label
+            >
+      <br>
+            <label
+              ><input
+                name="user-time"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />5-10 years</label
+            ><br>
+           <label
+              ><input
+                name="user-time"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />More than 10 years</label
+            >
+          </div>
+         <div class="form-group">
+              <label id="why-label">Who is your favorite character?</label>
+               <select id="dropdown" name="role" class="form-control" required>
+                 <option disabled selected value>Choose your favorite character</option>
+                 <option value="Just for fun">Sherlock Holmes</option>
+                 <option value="Your school forces you to read it">Dr. Watson</option>
+                <option value="I like reading books and Sherlock Holmes is my choice">Dr. Moriaty</option>
+                 <option value="SC">Mycroft Holmes</option>
+                 <option value="Other">Det. Lestrade</option>
+                   <option value="Other">Others </option>
+                 </select>
+                 </div>
+        <div class="form-group">
+          <label class="label" for="comments">Anything you want to say to us before leaving? </label>
+          <textarea
+           id="comments"
+           class="input-textarea"
+           name="comment"                    placeholder="Enter your thoughts here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="custom-btn btn-12"><span>Click!</span><span>Submit</span></button>
+        </div>
+          </form>
+        </div>
+      </body>
+
+</html>

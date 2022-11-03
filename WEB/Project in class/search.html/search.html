@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../image/Google-favicon-2015.png">
+    <script src="https://kit.fontawesome.com/19254302de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="search.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <button id="open-button"><span class="material-icons">
+        textsms
+        </span></button>
+    <div id="overlay">
+        <section class="popUp">
+            <div class="popUp-header">
+                <span id="close">&times;</span>
+                    <i class="far fa-comment-alt" style="font-size: 28px;"></i>
+            </div>
+            <div class="popUp-main">
+                <div class="message1">
+                    <span class="material-icons">
+                        support_agent
+                        </span>
+                    <div class="msg-box">
+                        <b>Customer Service</b>
+                        <p>Hello! This is the Hanoi's Purge customer service, may I help you?</p>
+                    </div>
+                </div>
+            </div>
+            <form class="popUp-footer">
+                <input type="Text" placeholder="Write your message...">
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </section>
+    </div>
+
+
+    <div class="background">
+        <a href="home.html"><img src="../image/HANOI PURGE.png"></a><br>
+        <br>
+        <input type="search" placeholder="Begin Your Research. Enter keywords.">
+        <h3>Press enter to submit</h3>
+    </div>
+   
+</body>
+<script>
+    document.querySelector(".banner__close").addEventListener("click", function() {
+    this.closest(".banner").style.display = "none";
+});
+
+var button = document.getElementById("open-button");
+var closebutton = document.getElementById("close");
+var overlay = document.getElementById("overlay");
+
+function hide() {
+    overlay.style.display = "none";
+    button.style.display = "block"
+}
+
+button.onclick = function() {
+    overlay.style.display = " block";
+    button.style.display = "none";
+}
+
+closebutton.onclick = function () {
+    hide();
+}
+
+window.onclick = function(event) {
+    if(event.target == overlay){
+        hide();
+    }
+}
+
+const msgForm = get(".popUp-footer");
+const msgInput = get("input");
+const chatArea = get(".popUp-main");
+
+const CP_MSG = [
+    "What's wrong with the tour?",
+    "Do you request any support or refund?",
+    "Please send the ticket details.",
+    "Thanks! You'll get a reply soon."
+]
+
+var i = 0;
+const CP_IMG = "https://image.flaticon.com/icons/svg/2928/2928988.svg";
+const CILENT_IMG = "https://image.flaticon.com/icons/svg/929/929422.svg";
+const CP_NAME = "Customer-service";
+const CILENT_Name = "Cilent";
+
+appendMesssage(CP_NAME, CP_IMG, "comp", "Hi, how can I help you?");
+msgForm.addEventListener("submit", event =>  {
+    event.preventDefault();
+
+    const chatText= msgInput.value;
+    if (!chatText) return;
+    
+    appendMessage(CILENT_Name, CILENT_IMG, "cilent", chatText);
+    msgInput.value = "";
+    cpResponse();
+});
+
+function appendMessage(name, img, side, text) {
+    const msgHTML = '<div class="msg $(side)-msg> <div class="chat-img" style="background-image:url($(img))"></div> <div class = "chat-bubble"> <div class="chat-name">${name}</div> <div class="chat-text">${text}</div></div></div>';
+    
+    chatArea.insertAdjacentHTML("beforeend", msgHTML);
+    chatArea.scrollTop += 500;
+}
+
+function cpResponse(){
+    const chatText = CP_MSG [i++];
+    if (i >= CP_MSG.length){
+        i = 0;
+    }
+
+    const delay = chatText.split(" ").length * 100;
+
+    setTimeout(() => {
+        appendMessage(CP_NAME, CP_IMG, "comp", chatText);
+    }, delay);
+}
+
+function get(selector, root = document) {
+    return root.querySelector(selector);
+}
+
+document.querySelector(".title2").addEventListener("click", function() {
+    this.closest(".commerce").style.display = "none";
+});
+
+const btn = document.querySelector("#btn");
+const btnText = document.querySelector("#btnText");
+
+btn.onclick = () => {
+    btnText.innerHTML = "Thanks";
+    btn.classList.add("active");
+}
+</script>
+</html>

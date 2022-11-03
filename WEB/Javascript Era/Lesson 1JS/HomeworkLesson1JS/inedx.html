@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Variable</title>
+        <script src="https://kit.fontawesome.com/19254302de.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script href="script.js">
+            document.write("This is my first Javascript homework! <br>");
+            document.write("Exercise number 1: Show my full name on the console and alert (Uncomment the entire code to see it works) <br>");
+            //Bài số 1 về Name:
+            var firstName = "Phạm";
+            var surName = "Minh ";
+            var lastName = "Phú ";
+            console.log(
+                "My full name is " + lastName + surName + firstName);
+                alert("My full name is " + lastName +  surName +  firstName);
+
+
+
+
+
+                
+                document.write("Exercise number 2: Tìm số dư phép chia giữa các số nguyên bất kỳ (Sẽ làm nâng cao chút bằng cách lấy số bị chia và số chia từ câu trả lời của người dùng) <br>");
+                // Bài số 2 về tính số dư:
+                var SoBiChia = prompt("Hãy ghi một số nguyên bất kỳ để đóng vai trò làm Số Bị Chia:");
+                var SoChia = prompt("Hãy ghi một số nguyên bất kỳ để đóng vai trò làm Số Chia");
+                var SoDu = (SoBiChia % SoChia);
+                console.log("Số dư trong phép tính " + SoBiChia + " chia cho " + SoChia + " là " + SoDu);
+                alert("Số dư trong phép tính " + SoBiChia + " chia cho " + SoChia + " là " + SoDu);
+
+
+
+
+
+
+
+            document.write("Exercise number 3: Tính độ dài một string và so sánh chúng với một string khác nếu như người dùng đồng ý so sánh");
+            // Bài số 3 về so sánh String:
+            var String1 = prompt("Hãy ghi một string bất kỳ để tí nữa lấy chúng ra so sánh độ dài (Prompt của String 1)");
+            console.log("Độ dài của string 1 bạn vừa nhập vào là " + String1.length);
+            alert("Độ dài của string bạn vừa nhập vào là " + String1.length);
+            var String2 = prompt("Hãy lại ghi một string bất kỳ nữa để tí nữa lấy chúng ra so sánh độ dài (Prompt của String 2)");
+            console.log("Độ dài của string bạn vừa nhập vào là " + String2.length);
+            alert("Độ dài của string bạn vừa nhập vào là " + String2.length);
+            // Đoạn hơi để có được so sánh độ dài không
+            var AnswerForComparison = prompt("Bạn có muốn so sánh độ dài của 2 string xem cái nào dài hơn không? (Chỉ ghi mỗi yes hoặc néu không ghi thế thì ghi cái ghi cũng được. Cứ thử cả hai trường hợp đi");
+            if (AnswerForComparison = "yes") {
+                alert("Bạn ghi cái gì chúng tôi vẫn so sánh thôi. Bấm enter để xem kết quả");
+                console.log("Bạn ghi cái gì chúng tôi vẫn so sánh thôi Bấm enter để xem kết quả");
+            }
+            
+        // // Đoạn so sánh độ dài hai string
+        if (String1.length > String2.length) {
+            alert("Độ dài của String 1 dài hơn String 2");
+            console.log("Độ dài của String 1 dài hơn String 2");
+        } else {
+            alert("Độ dài của String 2 dài hơn String 1");
+            console.log("Độ dài của String 2 dài hơn String 1");
+        };
+        </script>
+
+    </body>
+</html>

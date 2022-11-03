@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../image/HANOI PURGE.png">
+    <script src="https://kit.fontawesome.com/19254302de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="in.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Welcome to PURGE NIGHT | Be a lifetime member</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="total-board">
+            <div class="sign-banner">
+            <h1>Sign in to the Website</h1>
+            <div class="icons">
+                <a href="https://codepen.io/login"><i class="fa-brands fa-codepen"></i></a>
+               <a href="../Google/goog.html"> <i class="fa-brands fa-google"></i></a>
+              <a href="../Twitter/twitter.html"> <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <h2>or use your account</h2> 
+             <form action="home.html">
+                <input type="email" id="userName" name="name" placeholder="Email" required>
+                <br>
+                    <input type="password" id="userPw" name="pw" placeholder="Password" required>
+                    <br>
+                    <a href="javascript:AlertIt()" >Forgot your password?</a>  
+                    <br>
+                    <button class="form__button button submit" onclick=check()>SIGN IN</button>
+                </form>
+            </div>
+            <div class="main-form">
+                    <h1 id="title-main">Hello Friend!</h1>
+                <p>Enter your personal details and start your journey with us</p>
+                <button id="button-up" onclick="window.location.href='up.html'">SIGN UP</button>
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function AlertIt() {
+var answer = confirm ("Please click on OK to continue.")
+if (answer)
+window.location="https://www.ghostsandgravestones.com/san-diego#ghost-tours";
+}
+</script>
+</html>

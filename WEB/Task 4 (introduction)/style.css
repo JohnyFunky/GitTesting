@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+.menu-bar {
+    background-color: rgba(0,0,0,.8); 
+    width: 100%;
+    height: 70px;
+    animation: bgcolor 10s infinite
+}
+
+@keyframes bgcolor {
+    0% {background-color: rgba(0,0,0.8)}
+    20% {background: #636363}
+    40% { background: #636363}
+    60% {  background: #24243e; }
+    80% {background: #3c3b3f;}
+    100% {background-color: rgba(0,0,0.8)}
+}
+
+.menu-ul {
+    display: flex;
+    list-style-type: none;    
+}
+
+.menu-ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    transition: 0.2s border-bottom;
+    border-bottom: 3px solid transparent;
+}
+
+.menu-ul a:hover {
+    border-bottom: 3px solid #d71921;
+}
+
+.ul-li {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.logo-menu {
+    width: 90px;
+    height: 125px;
+    position: absolute;
+}
+
+input[type="search"] {
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+    transition: 0.2s border;
+}
+
+input[type="search"]:hover {
+    border: 2px solid 
+    #eabe10;
+}
+
+.menu-img-box {
+    background-color: #d71921;
+    width: 90px;
+    height: 125px;
+    margin-left: 80px;
+}
+
+/* End menu */
+.hero-bg1 {
+    width: 100%;
+    height: 500px;
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://c.ekstatic.net/ecl/aircraft-interior/premium-economy/emirates-premium-economy-seat-w1920x480.jpg?h=_WrZVzOa_-M3hhiFNdXD7g) ;
+    /* Em lấy linear từ bên emirates về */
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    padding-top: 130px;
+    animation: textcolor 15s infinite;
+}
+
+@keyframes textcolor {
+ 0% {color: #fff;}
+ 20% {color: #d71921}
+ 40% {color: #fff}
+ 60% {color: #d71921}
+ 80% {color: #fff}
+ 100% { color: #d71921}
+}
+
+.text h2 {
+    font-size: 3rem;
+    transform: rotate(0deg) scale(1) skew(-13deg) translate(0);
+    padding-left: 33px;
+}
+
+.text h1 {
+    padding-left: 33px;
+    font-weight: 600;
+    font-size: 8rem;
+    padding-left: 150px;
+    transform: rotate(0deg) scale(1) skew(-13deg) translate(0);
+}
+
+.text h3 {
+    font-size: 40px;
+    transform: rotate(0deg) scale(1) skew(-13deg) translate(0);
+    padding-left: 633px;
+}
+
+.small-box {
+    width: 100%;
+    height: 150px;
+    background-color: #3c3b3f;
+}
+
+.small-box {
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+.small-box i {
+    font-size: 30px;
+}
+
+.fcc {
+    width: 50%;
+    border: 2px solid white;
+}
+
+.fcc i {
+    font-size: 50px;
+}
+.cdp {
+    width: 50%;
+    border: 2px solid white;
+}
+
+.cdp i {
+    font-size: 50px;
+    color: beige;
+}
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image:  url(https://wallpapercave.com/wp/wp5307969.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.container {
+    width: 65%;
+    height: 450px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    opacity: 0.8;
+   border-radius: 20px;
+   position: absolute;
+  top: 20%;
+  left: 20%;
+  margin: -25px 0 0 -25px;
+  display: flex;
+}
+
+.main h1 {
+    text-align: center !important;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 30px;
+    color: black;
+}
+.pfp-part {
+    text-align: center;
+    width: 50%;
+}
+
+.pfp-part img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    padding-top: 10px;
+}
+.pfp-part p {
+    font-size: 15px;
+}
+
+.line-verti {
+    height: 90%;
+    margin-top: 22.5px;
+    border-radius: 20px;
+    border-right: 8px solid #fff;
+    position: absolute;
+    right: 50%;
+}
+
+.link-part {
+    width: 50%;
+    padding-right: -190px;
+    margin-top: 30px;
+    margin-left: 50px; 
+}
+
+.link-part a {
+     color: #FFF80A;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+button {
+    width: 90%;
+    height: 55px;
+    background-color: #293462;
+    margin-top: 5px;
+    border: 3px solid #fff;
+    text-align: center;
+    display: block;
+    margin-right: -30px;
+    transition: 0.5s;
+}   
+
+.link-part button:hover, .link-part a:hover {
+    background-color: transparent;
+    color: #293462;
+}
+
+iframe {
+    margin-top: 10px;
+    height: 90vh;
+    width: 60%;
+}
+
+.fa-facebook {
+    color: #1778F2;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #5851DB;
+} 
+
+.fa-envelope {
+    color: #eabe10;
+}
+
+.fa-square-phone {
+    color: #129448;
+}
+
+.footer {
+    background-color:#2C3639;
+    text-align: center;
+    height: 100vh;
+}

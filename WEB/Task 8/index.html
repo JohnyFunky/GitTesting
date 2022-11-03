@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Task 8/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/19254302de.js" crossorigin="anonymous"></script>
+        <title>Task 8 Homework</title>
+    </head>
+    <body>
+        <div class="introduction">
+            <h1>Welcome to Task 8 Page</h1>
+            <h2>Click <a href="#section2" style="text-decoration: none;">here</a> to see the work</h2>
+        </div>
+
+        <div class="timetable" id="section2">
+            <h1 style="text-align: center; padding-bottom: 5px;">TIMETABLE (8A3)</h1>
+            <table border="1" id="bang" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Activity Times</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+
+                    </tr>
+                </thead>
+
+                <tr>
+                    <th>8:15 - 8:45</th>
+                    <td colspan="5">Early Arrival (free choice and play-based learning)</td>
+                </tr>
+
+                <tr>
+                    <th>8:45 - 9:00</th>
+                    <td colspan="5">Morning Greeting (Music, Story reading, Craft, Sharing..etc)</td>
+                </tr>
+
+                <tr>
+                    <th>9:00 - 9:25</th>
+                    <td>Math</td>
+                    <td>Physics</td>
+                    <td>PE</td>
+                    <td>Biology</td>
+                    <td>Computer</td>
+                    
+                </tr>
+
+                <tr>
+                    <th>9:25 - 9:35</th>
+                    <td>Literature</td>
+                    <td>Chemistry</td>
+                    <td>Computer</td>
+                    <td>Life skills</td>
+                    <td>PE</td>
+                    
+                </tr>
+
+                <tr>
+                    <th>9:35 - 9:55</th>
+                    <td>Math</td>
+                    <td>Literature</td>
+                    <td>Art</td>
+                    <td>Math</td>
+                    <td>Literature</td>
+                    
+                </tr>
+
+                <tr>
+                    <th>9:55 - 10:20</th>
+                    <td colspan="5">Toilet Time and Snack</td>
+                </tr>
+
+                <tr>
+                    <th>10:20 - 10:50</th>
+                    <td colspan="5" rowspan="2">English Learning Time</td>
+                </tr>
+
+                <tr>
+                    <th>10:50 - 11:20</th>
+                </tr>
+
+                <tr>
+                    <th>11:20 - 11:35</th>
+                    <td>Biology</td>
+                    <td>Music</td>
+                    <td>Geography</td>
+                    <td>Math</td>
+                    <td>History</td>
+                    
+                </tr>
+
+                <tr>
+                    <th>11:35 - 11:45</th>
+                    <td colspan="5">End of the Day Routine Time (packing school bags)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container-sign">
+            <h1>Sign up Form</h1>
+                <div class="Form">
+                    <form>
+                        Name: <input id="name" type="text" name="username" placeholder="Type in your name..." /> <br />
+                        Password: <input id="password" type="password" name="password" placeholder="Enter your password" /> <br />
+                        Website: <input id="website" type="text" name="Website" placeholder="Type in your website..." /> <br />
+                        <input type="radio" id="male" name="gender" value="male">
+<label for="html">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="javascript">Female</label><br>
+                        Comment <input id="comment" type="text" name="comment" placeholder="Type in your Comment"><br>
+                        <button onclick="getData()" id="submit">Submit</button>
+
+                      </form>
+                </div>
+        </div>
+    </body>
+
+    <script>
+        function getData(){
+        //   Cách 1  // var name = document.getElementById(name);
+        // Từ 125 - 131
+            let input = document.querySelectorAll("input");
+            let name = input[0].value;
+            let email = input[1].value;
+            let website = input[2].value;
+            let cment = input[3].value;
+            event.preventDefault();
+            console.log(name+" "+email+" "+website);
+            // document.write(input[1]); Cách 1
+            // console.log(name) Cách 1
+        }
+
+    </script>
+</html>
