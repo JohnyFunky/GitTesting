@@ -1,0 +1,644 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://www.omnifood.net/resources/CSS/img/hero-min.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.nav {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 20px !important;
+    margin-left: -7px;  
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-list a {
+    color: white;
+    text-transform: Uppercase;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding-top: 20px;
+}
+
+.list-only {
+    list-style-type: none;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 360px;
+}
+
+.list-only li {
+    padding-left: 40px;
+    font-weight: 500;
+}
+
+.menu-list a:hover {
+    border-bottom: 2px solid #e67e22;
+    transform: border-bottom 0.2s;
+}
+
+/* Open-text part */
+.open-text h1 {
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 45.4px;
+    word-spacing: 4px;
+    letter-spacing:3px;
+    font-weight: 800;
+}
+
+.open-text {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* button */
+.button {
+    width: 1140px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.button a{
+    text-decoration: none;
+}
+
+#hungry-button {
+    background-color: darkorange;
+    border: 1px solid darkorange;
+    color: #fff;
+    margin-right: 15px;
+    padding: 10px 30px;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+#hungry-button:hover {
+    background-color: #e67e23;
+    border: 1px solid #e67e23;
+    color: white;
+}
+
+#showme-button {
+    border: 1px solid #e67e27;
+    color: #e67e27;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    font-size: 20px;
+}
+
+#showme-button:hover {
+    background-color: #e67e27;
+    border-color: #e67e27;
+    color: #fff;
+}
+
+/* End of Header */
+
+/* Delivery */
+#space {
+    padding: 40px 0;
+}
+
+#delivery {
+    width: 100%;
+    height: 100vh;
+}
+
+#delivery h1 {
+    font-size: 38.8px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    
+}
+
+hr {
+    width: 10%;
+    border-color: #e67e27;
+   margin-left: 45%;
+}
+
+#des {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 70%;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+/* info */
+.info {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 155px;
+}
+
+.info i {
+    font-size: 56px;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.info1 {
+    /* width: 23.8%; */
+    width: 25%;
+    margin-left: 50px;
+}
+
+.info h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.info2 h3 {
+    font-size: 23px;
+}
+
+.info p {
+    width: 245px;
+}
+
+.info2 {
+    width: 25%;
+    padding-left: 30px;
+}
+
+.info3 {
+    width: 25%;
+    padding-left: 30px;
+}
+
+.info4 {
+    width: 25%;
+    padding-left: 30px;
+}
+
+/* meal-photo */
+.meal-section {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.meal1 {
+    list-style: none;
+    width: 100%;
+    display: flex;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.meal-photo li {
+    width: 25%;
+    float: left;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* App part */
+.space {
+    width: 100%;
+    height: 0vh;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.app h1 {
+    margin-top: 370px;
+    padding-top: 30px;
+    font-size: 38.8px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;   
+}
+
+.main-stuff {
+    display: flex;
+    width: 100%;
+}
+
+.img {
+    width: 49.2%;
+}
+
+.img img {
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 49.2%;
+}
+
+.app-info {
+    width: 51.8%;
+    
+}
+
+.step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    font-size: 24px;
+    margin-right: 25px;
+    margin-top: 30px;
+    padding-top: 11px;
+}
+
+.step p {
+    margin-top: 30px;
+    width: 95%;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    width: 410px;
+}
+
+.step {
+    display: flex;
+}
+
+.logo-icon {
+    display: flex;
+}
+
+.logo-icon img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+/* Cities */
+.cities {
+    width: 100%;
+    height: 100vh;
+}
+
+.cities h1 {
+    padding-top: 100px;
+    font-size: 38.8px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;   
+}
+
+.box-city {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.box-city img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.box-city h3 {
+    font-size: 24px;
+}
+
+.box-city i {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+.text {
+    display: flex;
+}
+
+.text p {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.text a{
+    padding-top: 15px;
+    font-size: 20px;
+    color:#e67e22;
+    padding-bottom: 1.5px;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    transition: 0.3s;
+}
+
+.text a:hover {
+    color: black;
+    border-bottom: 1px solid transparent;
+}
+
+.city1 {
+ width: 23.8%;
+ margin-right: 20px;
+}
+
+.city2 {
+    width: 23.8%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.city3 {
+    width: 23.8%;
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+.city4 {
+    width: 23.8%;   
+    margin-left: 20px;
+
+}
+
+/* feedback */
+.feedback {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(	http://www.omnifood.net/resources/CSS/img/back-customers-min.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.feedback h1 {
+    padding-top: 70px;
+    font-size: 38.8px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;  
+    color: #fff; 
+}
+
+.feed-text {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    margin-top: 30px;
+}
+
+.feed1 {
+    width: 49%;
+    margin-right: 15px;
+}
+
+.feed2 {
+    width: 49%;
+}
+
+.feed-text h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.feed-text i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.pfp {
+    display: flex;
+}
+
+.pfp img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.pfp p {
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+/* Price */
+.price {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.price h1 {
+    padding-top: 70px;
+    font-size: 38.8px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;  
+}
+
+.boxes {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+.premium {
+    width: 32.26%;
+    background-color: #fff;
+    margin: 1% 0 1% 1.6%;
+    border-radius: 5px;
+    padding: 10px;
+    height: 420px;
+}
+
+.boxes h2 {
+    text-transform: uppercase;
+}
+
+.big-text {
+    font-size: 300%;
+    color:#e67e22;
+
+}
+
+#that {
+    font-size: 120%;
+}
+
+#small-text {
+    font-size: 50%; 
+}
+
+.pro {
+    width: 32.26%;
+    background-color: #fff;
+    margin: 1% 0 1% 1.6%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.starter {
+    width: 32.26%;
+    background-color: #fff;
+    margin: 1% 0 1% 1.6%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.boxes li {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+#sign-btn {
+    background-color: darkorange;
+    border: 1px solid darkorange;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+#sign-btn:hover {
+    background-color: #e67e23;
+    border: 1px solid #e67e23;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    height: 190.63px;
+}
+
+.first-info-line {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu-part ul {
+    display: flex;
+}
+
+.menu-part li {
+    list-style-type: none;
+}
+
+.menu-part a {
+    text-decoration: none;
+    color: #888;
+    transition: 0.5s;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.menu-part a:hover {
+    color: white;
+}
+
+.social ul {
+    display: flex;
+    margin-left: 550px;
+}
+
+.social li {
+    list-style-type: none;
+}
+
+.social i {
+    text-decoration: none;
+    color: #888;
+    transition: 0.5s;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social i:hover {
+    color: white;
+}
+
+.footer h2 {
+    color: #888;
+    font-size: 20px;
+    padding-top: 35px;
+}
